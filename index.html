@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widthdth, initial-scale=1.0">
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="manifest" href="manifest.json"> 
+<meta name="theme-color" content="#969eb8">  -->
+
+</head>
+
+<body>
+    <div class="music-container">
+        <h2 id="playlist-title">Player de música</h2>
+        
+        <img id="cover" alt="Disc Cover"></img>
+        <audio id="audio"></audio>
+        <div id="below-cover">
+            <div id="song-info">
+                <div id="song-name">Nome da música</div>
+                <div id="band-name" class="light-color">Nome da Banda</div>
+            </div>
+            <button id="like" class="button light-color"><i class="bi bi-heart"></i></button>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
+            <div id="time-box">
+                <div id="song-time">00:00:00</div>
+                <div id="total-time">00:00:00</div>
+
+            </div>
+        </div>
+
+        <div id="button-container">
+            <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button>
+            <button id="previous" class="button button-navigate"><i class="bi bi-skip-start-fill"></i></button>
+            <button id="back-5-seconds" class="button buttonskipback"><i class="bi bi-5-square"></i></button>
+            <button id="play" class="button  button-biggest"><i class="bi bi-play-circle-fill"></i></button>
+            <button id="skip-5-seconds" class="button buttonskipback "><i class="bi bi-5-square"></i></button>
+            <button id="next" class="button button-navigate"><i class="bi bi-skip-end-fill"></i></button>
+            <button id="repeat" class="button"><i class="bi bi-repeat"></i></button>
+        </div>
+    </div>
+    <div id="reproducoes">
+        <h5 id="text-mensagem"> Lista de reprodução  </h5>
+        <div id="song-info-reproduções">
+            <h5 id="song-name-da-lista" class="text-below-reproducoes">Nome da música</h5>
+            <!-- Mini barra de progresso -->
+            <div id="mini-player">
+                <div id="mini-progress-container">
+                  <div class="mini-progress-bar">
+                    <div class="mini-current-progress"></div>
+                  </div>
+                  <div class="mini-time-box">
+                    <span class="mini-current-time">0:00</span>
+                    <span class="mini-total-time">3:45</span>
+                  </div>
+                </div>
+              
+                <div class="mini-controls">
+                  <button id="mini-previous" class="mini-button"><i class="bi bi-skip-start-fill"></i></button>
+                  <button id="mini-play" class="mini-button"><i class="bi bi-play-circle-fill"></i></button>
+                  <button id="mini-next" class="mini-button"><i class="bi bi-skip-end-fill"></i></button>
+                </div>
+              </div>
+  
+            <h6 id="band-name-da-lista" class="text-below-reproducoes">Nome da Banda</h6> 
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!--teste de git-->
+
+<!--teste de git-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
