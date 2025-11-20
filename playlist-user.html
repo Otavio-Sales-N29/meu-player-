@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Player de Música — Criar / Escutar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <button class="btn-voltar-global" id="voltar-para-capa-2">← Voltar</button>
+
+  <main class="secao criar-escutar-container">
+    <h2>Criar nova música / adicionar em uma playlist</h2>
+
+    <label>Nome da Playlist *</label>
+    <input type="text" id="array-name" placeholder="ex: minhaPlaylist" />
+
+    <label>Nome da música *</label>
+    <input type="text" id="song-name-input" placeholder="ex: Minha música" />
+
+    <label>Artista / Banda</label>
+    <input type="text" id="artist-input" placeholder="ex: Minha banda" />
+
+    <label>Nome do arquivo (sem extensão)</label>
+    <input type="text" id="file-name-input" placeholder="ex: musica123" />
+
+    <label>Arquivo da música (.mp3) *</label>
+    <input type="file" id="audio-file" accept=".mp3" />
+
+    <label>Imagem / capa (.jpg ou .png)</label>
+    <input type="file" id="image-file" accept=".jpg,.png" />
+
+    <div class="acao-criar">
+      <button id="salvar-musica" class="menu-btn pequena">Salvar música</button>
+    </div>
+
+    <h3>Playlists salvas</h3>
+    <div id="lista-playlists"></div>
+  </main>
+
+  <script src="user-playlists.js"></script>
+</body>
+
+</html>
